@@ -10,7 +10,7 @@
 
 <body>
   <header>
- 
+
     <h1>overzicht module 1</h1>
     <hr>
     <nav>
@@ -26,23 +26,212 @@
   </header>
   <main>
     <section>
-    <div><p>In dit poject ga ik samenvatten wet we allemaal tijdens <strong>de 1<sup>ste</sup> </strong> hebben gezien</p></div>
-    <!-- aub gebruik geen <br> wanneer je codeert niemand doet dat tegenwoordig! gebruik <div> je zal later flexbox leren-->
-  </section>
+      <div>
+        <p>In dit poject ga ik samenvatten wet we allemaal tijdens <strong>de 1<sup>ste</sup> </strong> hebben gezien
+        </p>
+      </div>
+      <!-- aub gebruik geen <br> wanneer je codeert niemand doet dat tegenwoordig! gebruik <div> je zal later flexbox leren-->
+    </section>
 
-  <section>
-    <div>
-      <ol>
-        <!--ik ga niet de introductie bijvoegen, zie ehb account-->
-        <li id="basis-html">basis html</li>
-        <li id="basis-css">basis css</li>
-      </o>
-    </div>
-  </section>
-  <aside>
-    <div><em>ik neem altijd het vorige project mee in de nieuwe leerstif om de website te verbeteren</em></div>
-    <!--aside vind ik een beetje onnuttig word zelden gebruikt-->
-  </aside>
+    <section>
+      <div>
+<ul>
+  <li id="basis-html">Basis HTML
+    <ul>
+      <li>HTML zorgt voor structuur van een webpagina</li>
+      <li>Elementen beschrijven de verschillende delen: titels, paragrafen, …</li>
+      <li>HTML is niet bedoeld voor design, enkel voor structuur</li>
+    </ul>
+    
+    <h2>Structuur van een HTML-document</h2>
+    <img id="img1" src="./images/structure.jpg" alt="Structuur van HTML-document">
+    
+    <p>Elke HTML-tag begint met &lt;naam&gt; en sluit met &lt;/naam&gt;.  
+       Voorbeeld: &lt;p&gt;Tekst&lt;/p&gt;</p>
+
+    <h3>Belangrijke hoofdelementen</h3>
+    <ul>
+      <li>&lt;!DOCTYPE html&gt; → Definieert dat het document een HTML5-bestand is (geen sluit-tag nodig)</li>
+      <li>&lt;html&gt; ... &lt;/html&gt; → Hoofdelement van de pagina</li>
+      <li>&lt;head&gt; ... &lt;/head&gt; → Bevat metadata en instellingen (titel, CSS, scripts)</li>
+      <li>&lt;meta charset="UTF-8"&gt; → Tekencodering instellen (geen sluit-tag nodig)</li>
+      <li>&lt;body&gt; ... &lt;/body&gt; → Hoofdinhoud / de zichtbare tekst en elementen</li>
+    </ul>
+
+    <h3>Orphelijn-tags (zonder sluit-tag)</h3>
+    <p>Er zijn ook zogenaamde orphelijn-tags die geen sluit-tag hebben. Voorbeelden:</p>
+    <ul>
+      <li>&lt;img src="afbeelding.jpg" alt="Beschrijving"&gt; → Afbeelding</li>
+      <li>&lt;br&gt; → Nieuwe regel (line break)</li>
+      <li>&lt;hr&gt; → Horizontale lijn</li>
+      <li>&lt;input type="text"&gt; → Invoerveld (formulier)</li>
+      <li>&lt;link rel="stylesheet" href="stijl.css"&gt; → Externe CSS</li>
+      <li>&lt;meta charset="UTF-8"&gt; → Metadata</li>
+      <li>&lt;area&gt;, &lt;base&gt;, &lt;col&gt;, &lt;command&gt;, &lt;embed&gt;, &lt;source&gt;, &lt;track&gt;, &lt;wbr&gt; → Andere voorbeelden</li>
+    </ul>
+  </li>
+</ul>
+
+
+              <h2>Hoe ziet een webpagina eruit?</h2>
+              <img id="img2" src="./images/structure2.jpg">
+
+              <p>Alle zichtbare elementen van een webpagina bevinden zich in het &lt;body&gt; gedeelte.</p>
+
+<ul>
+  <li>&lt;header&gt; → Bovenste gedeelte van de pagina (logo, titel, menu)</li>
+  <li>&lt;nav&gt; → Navigatiebalk met links</li>
+  <li>&lt;section&gt; → Hoofdstuk of deel van de inhoud</li>
+  <li>&lt;article&gt; → Zelfstandig stuk inhoud (bv. blogartikel)</li>
+  <li>&lt;aside&gt; → Zijbalk met extra info (bv. reclame, links)</li>
+  <li>&lt;footer&gt; → Onderaan de pagina (contact, copyright)</li>
+</ul>
+
+<p>In deze structuur plaatsen we vaak &lt;div&gt; elementen.  
+Binnen die &lt;div&gt;’s zetten we andere inhoud, zoals:</p>
+
+<h3>Structuur</h3>
+<ul>
+  <li>&lt;!DOCTYPE html&gt; → Definieert dat het document HTML5 is (geen sluit-tag)</li>
+  <li>&lt;html&gt; ... &lt;/html&gt; → Hoofdelement van de pagina</li>
+  <li>&lt;head&gt; ... &lt;/head&gt; → Metadata en instellingen</li>
+  <li>&lt;meta charset="UTF-8"&gt; → Tekencodering instellen (geen sluit-tag)</li>
+  <li>&lt;title&gt; ... &lt;/title&gt; → Titel in de browser-tab</li>
+  <li>&lt;body&gt; ... &lt;/body&gt; → Zichtbare inhoud van de pagina</li>
+</ul>
+
+<h3>Layout</h3>
+<ul>
+  <li>&lt;header&gt; ... &lt;/header&gt; → Bovenste gedeelte (logo, menu, titel)</li>
+  <li>&lt;nav&gt; ... &lt;/nav&gt; → Navigatiemenu</li>
+
+  <img id="img3" src="./images/navbar.png">
+  
+  <li>&lt;section&gt; ... &lt;/section&gt; → Deel van de inhoud</li>
+  <li>&lt;article&gt; ... &lt;/article&gt; → Zelfstandig stuk inhoud</li>
+  <li>&lt;aside&gt; ... &lt;/aside&gt; → Zij-inhoud (bv. reclame)</li>
+  <li>&lt;footer&gt; ... &lt;/footer&gt; → Voettekst van de pagina</li>
+
+  <img id="img4" src="./images/footer.png">
+
+  <li>&lt;div&gt; ... &lt;/div&gt; → Container/blok voor structuur</li>
+  <li>&lt;span&gt; ... &lt;/span&gt; → Inline container voor tekst</li>
+</ul>
+
+<h3>Tekst</h3>
+<ul>
+  <li>&lt;h1&gt; ... &lt;/h1&gt; t/m &lt;h6&gt; ... &lt;/h6&gt; → Titels (van groot naar klein)</li>
+  <li>&lt;p&gt; ... &lt;/p&gt; → Paragraaf</li>
+  <li>&lt;br&gt; → Regelafbreking (geen sluit-tag)</li>
+  <li>&lt;hr&gt; → Horizontale lijn (geen sluit-tag)</li>
+  <li>&lt;strong&gt; ... &lt;/strong&gt; → Belangrijke tekst (vet)</li>
+  <li>&lt;em&gt; ... &lt;/em&gt; → Nadruk (cursief)</li>
+  <li>&lt;sup&gt; ... &lt;/sup&gt; → Superscript (bv. 2&lt;sup&gt;3&lt;/sup&gt; = 2³)</li>
+  <li>&lt;sub&gt; ... &lt;/sub&gt; → Subscript (bv. H&lt;sub&gt;2&lt;/sub&gt;O = H₂O)</li>
+  <li>&lt;blockquote&gt; ... &lt;/blockquote&gt; → Lange citaat (meestal met inspringing)</li>
+  <li>&lt;abbr title="..."&gt; ... &lt;/abbr&gt; → Afkorting met uitleg (tooltip bij hover)</li>
+  <li>&lt;cite&gt; ... &lt;/cite&gt; → Naam van een bron of auteur</li>
+  <li>&lt;dfn&gt; ... &lt;/dfn&gt; → Definities van een term (eerste keer uitleggen)</li>
+  <li>&lt;ins&gt; ... &lt;/ins&gt; → Toegevoegde tekst (meestal onderstreept)</li>
+  <li>&lt;del&gt; ... &lt;/del&gt; → Verwijderde tekst (meestal doorstreept)</li>
+</ul>
+
+<p><strong>Opmerking:</strong>  
+Tags zoals &lt;strong&gt;, &lt;em&gt;, &lt;b&gt; en &lt;i&gt; zijn niet bedoeld om de tekst <em>stijl</em> te geven, maar hebben een <u>semantische betekenis</u> (inhoudelijk belang of nadruk).  
+Voor echte vormgeving (vet, cursief, kleuren, lettertypes) gebruikt men **CSS**.</p>
+
+<h3>Links & media</h3>
+<ul>
+  <li>&lt;a href="..."&gt; ... &lt;/a&gt; → Hyperlink</li>
+  <li>&lt;img src="..." alt="..."&gt; → Afbeelding (geen sluit-tag)</li>
+  <li>&lt;video src="..." controls&gt; ... &lt;/video&gt; → Video</li>
+  <li>&lt;audio src="..." controls&gt; ... &lt;/audio&gt; → Audio</li>
+  <li>&lt;a href="#section1"&gt;Ga naar sectie 1&lt;/a&gt; → Ancre (scroll naar een element op de pagina)</li>
+  <li>&lt;a href="tel:+32123456789"&gt;Bel ons&lt;/a&gt; → Link naar telefoonnummer waarmee je direct kunt bellen</li>
+  <li>&lt;a href="mailto:email@example.com"&gt;Stuur een e-mail&lt;/a&gt; → Link naar je mailbox met de ontvanger al ingevuld</li>
+</ul>
+
+<h4>Uitleg over attributen en hun waarden</h4>
+<p>
+  Een <strong>attribuut</strong> geeft extra informatie aan een HTML-element en staat binnen de starttag. 
+  Het beïnvloedt hoe het element zich gedraagt of wat het inhoudt.
+</p>
+<p>
+  De <strong>waarde van een attribuut</strong> vertelt het element welke specifieke informatie het moet gebruiken. 
+  Waarden staan altijd tussen aanhalingstekens <code>" "</code>.
+</p>
+
+<p><strong>Voorbeelden:</strong></p>
+<ul>
+  <li>&lt;img src="foto.jpg" alt="Beschrijving van de foto"&gt; → <code>src</code> en <code>alt</code> zijn attributen, met respectievelijke waarden.</li>
+  <li>&lt;a href="https://voorbeeld.com"&gt;Klik hier&lt;/a&gt; → <code>href</code> is een attribuut met de waarde van de URL.</li>
+  <li>&lt;input type="text" name="voornaam" placeholder="Vul je naam in"&gt; → <code>type</code>, <code>name</code> en <code>placeholder</code> zijn attributen met bijbehorende waarden.</li>
+</ul>
+
+<p><strong>Belang van attributen:</strong> Ze maken je pagina functioneel, toegankelijk en correct voor SEO.</p>
+
+
+<h3>Lijsten</h3>
+<ul>
+  <li>&lt;ul&gt; ... &lt;/ul&gt; → Ongeordende lijst (bolletjes)</li>
+  <li>&lt;ol&gt; ... &lt;/ol&gt; → Geordende lijst (nummers)</li>
+  <li>&lt;li&gt; ... &lt;/li&gt; → Lijst-item</li>
+  <li>&lt;dl&gt; ... &lt;/dl&gt; → Definitielijst</li>
+  <li>&lt;dt&gt; ... &lt;/dt&gt; → Term in een definitielijst</li>
+  <li>&lt;dd&gt; ... &lt;/dd&gt; → Beschrijving in een definitielijst</li>
+</ul>
+
+<h3>Tabellen</h3>
+<ul>
+  <li>&lt;table&gt; ... &lt;/table&gt; → Tabel</li>
+  <li>&lt;tr&gt; ... &lt;/tr&gt; → Rij</li>
+  <li>&lt;th&gt; ... &lt;/th&gt; → Tabelkop</li>
+  <li>&lt;td&gt; ... &lt;/td&gt; → Tabelcel</li>
+  <li>&lt;thead&gt; ... &lt;/thead&gt; → Kop van de tabel</li>
+  <li>&lt;tbody&gt; ... &lt;/tbody&gt; → Lichaam van de tabel</li>
+  <li>&lt;tfoot&gt; ... &lt;/tfoot&gt; → Voet van de tabel</li>
+</ul>
+
+<h3>Formulieren</h3>
+<ul>
+  <li>&lt;form&gt; ... &lt;/form&gt; → Formulier</li>
+  <li>&lt;input type="text"&gt; → Tekstinvoer (geen sluit-tag)</li>
+  <li>&lt;input type="password"&gt; → Wachtwoordinvoer</li>
+  <li>&lt;input type="checkbox"&gt; → Checkbox</li>
+  <li>&lt;input type="radio"&gt; → Radioknop</li>
+  <li>&lt;input type="submit"&gt; → Verstuurknop</li>
+  <li>&lt;label&gt; ... &lt;/label&gt; → Label voor een invoerveld</li>
+  <li>&lt;textarea&gt; ... &lt;/textarea&gt; → Meerdere regels tekstveld</li>
+  <li>&lt;select&gt; ... &lt;/select&gt; → Keuzelijst</li>
+  <li>&lt;option&gt; ... &lt;/option&gt; → Optie in een keuzelijst</li>
+  <li>&lt;button&gt; ... &lt;/button&gt; → Knop</li>
+</ul>
+
+<h3>Semantisch extra</h3>
+<ul>
+  <li>&lt;main&gt; ... &lt;/main&gt; → Hoofdinhoud van de pagina</li>
+  <li>&lt;figure&gt; ... &lt;/figure&gt; → Groep afbeelding + bijschrift</li>
+  <li>&lt;figcaption&gt; ... &lt;/figcaption&gt; → Bijschrift bij een afbeelding</li>
+  <li>&lt;mark&gt; ... &lt;/mark&gt; → Gemarkeerde tekst</li>
+  <li>&lt;code&gt; ... &lt;/code&gt; → Codefragment</li>
+  <li>&lt;pre&gt; ... &lt;/pre&gt; → Voorgeformatteerde tekst (zoals geschreven)</li>
+</ul>
+
+<p><strong>Opmerking:</strong> Veel ontwikkelaars hebben de slechte gewoonte om te veel &lt;div&gt; elementen in elkaar te zetten (“divs op divs op divs...”).  
+Dit maakt de code moeilijk leesbaar en minder overzichtelijk.</p>
+
+            </ul>
+          </li>
+
+
+          <li id="basis-css">basis css</li>
+        </ul>
+      </div>
+    </section>
+    <aside>
+      <div><em>ik neem altijd het vorige project mee in de nieuwe leerstif om de website te verbeteren</em></div>
+      <!--aside vind ik een beetje onnuttig word zelden gebruikt-->
+    </aside>
   </main>
   <footer>
     <P>© made with ❤️ by <b>Sounya Abattouy</b></P>
