@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Shawshank Redemption</title>
+    <style>
+        html {
+            /* font-size: 62.5%; 16px (défaut navigateur) * 0.625 = 10px = 0.625rem */
+            font-size: 1 rem
+                /*16px normalité*/
+        }
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .navigatie a:hover {
+            text-shadow: 0 0 6px red;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        h1 {
+
+            position: relative;
+            font-size: 36px;
+            font-weight: bold;
+
+        }
+
+        h1::before {
+            /*⚠️⚠️⚠️*/
+            content: "The Shawshank Redemption";
+            position: absolute;
+            top: 15px;
+            left: 10px;
+            color: rgb(255, 106, 80);
+            z-index: -1;
+        }
+
+        h2 {
+            -webkit-text-stroke: 1px red;
+            /*⚠️⚠️⚠️*/
+
+        }
+
+        .quotes {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        ul.navigatie {
+            background-color: gold;
+            border-width: 5px;
+            border-style: solid;
+            /*⚠️⚠️⚠️*/
+            border-color: blanchedalmond;
+            padding: 10px;
+            /* width: fit-content; */
+            /* width: 300px; */
+            display: inline-block;
+            /*klassieker*/
+        }
+
+        nav ul{
+            padding:0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav li {display: inline-block;padding:0.5rem;} /*les listes sont l'un en dessous de lautre mais avec display inline ca met lun a coté de l'autre*/
+        nav a {margin-right: 1rem;}
+
+        #summary,
+        #general,
+        #topcast,
+        #morelikethis,
+        #featuredreview,
+        #relatednews {
+            border: none;
+            border-bottom: 2px solid red;
+            width: fit-content;
+            padding-bottom: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="top">The Shawshank Redemption</h1>
+    <nav>
+        <ul class="navigatie">
+            <li><a href="#general">General info</a></li>
+            <li><a href="#summary">Summary</a></li>
+            <li><a href="#topcast">Top Cast</a></li>
+            <li><a href="#morelikethis">More like this</a></li>
+            <li><a href="#featuredreview">Featured Review</a></li>
+            <li><a href="#relatednews">Related News</a></li>
+        </ul>
+    </nav>
+    <h2 id="general">General info</h2>
+    <ul>
+        <li>Director: Frank Darabont</li>
+        <li>Release date: 14 october 1994</li>
+        <li>duration: 2h 22min</li>
+        <li>Genres</li>
+        <ul>
+            <li>crime</li>
+            <li>drama</li>
+        </ul>
+        <li>Writers</li>
+        <ul>
+            <li>Stephen King</li>
+            <li>Frank Darabont</li>
+        </ul>
+        <li>IMBD rating: 9,3/10</li>
+    </ul>
+    <hr>
+    <h2 id="summary">Summary</h2>
+    <p>Andy Dufresne is sent to Shawshank Prison for the murder of his wife and her secret lover. He is very isolated
+        and
+        lonely at first, but realizes there is <b>something deep inside your body that people can't touch or get
+            to....'HOPE'.</b>
+        Andy becomes friends with prison 'fixer' Red, and Andy epitomizes why it is crucial to have dreams. His spirit
+        and
+        determination lead us into a world full of imagination, one filled with courage and desire. <em
+            class="quotes">Will Andy ever realize
+            his dreams?</em>
+    </p>
+    <h2 id="topcast">Top Cast</h2>
+    <ul>
+        <li>Tim Robbins</li>
+        <li>Morgan Feeman</li>
+        <li>Bob Gunton</li>
+        <li>William Sadler</li>
+    </ul>
+    <h2 id="morelikethis">More like this</h2>
+    <ol>
+        <li><a href="thegodfather.html">The Godfather</a></li>
+        <li><a href="thedarknight.html">The Dark Night</a></li>
+        <li><a href="forrestgump.html">Forrest Gump</a></li>
+        <li><a href="fightclub.html">Fight Club</a></li>
+    </ol>
+    <h2 id="featuredreview">Featured Review</h2>
+    <p>Stephen King's best adapted movie
+        I have never seen such an amazing film since I saw <b> Shawshank Redemption </b>. Shawshank encompasses
+        friendships, hardships, hopes, and dreams. And what is so great about the movie is that it moves you, it gives
+        you hope.
+        Even though the circumstances between the characters and the viewers are quite different, you don't feel that
+        far removed from what the characters are going through.
+
+        King is one of the best writers in the world. Books like IT and the Castle Rock series are some of the greatest
+        stories ever told. But his best adaptations are always done by the best directors. The Shining was brilliantly
+        interpreted by Kubrick and of course the aforementioned Misery and Stand By Me are both by Rob Reiner. Now Frank
+        Darabont comes onto the scene and makes arguably the best King film ever. He seems to understand what King wants
+        to say and he conveys that beautifully.
+
+        What makes this film one of the best ever made is the message it conveys. It is one of eternal hope. Andy
+        Dufresne, played by Tim Robbins, has been sent to prison for a crime he did not commit. But he never loses hope.
+        He never gives up his quest to become a free man again. His years of tenacity, patience and wits keep him not
+        only sane, but it gives his mind and a spirit a will to live. This film has a different feel to it. There has
+        never been anything like it before and I don't know if there will again.</p>
+
+    <h2 id="relatednews">Related News</h2>
+    <p>Some related news articles here</p>
+
+    <hr>
+
+    <a href="#top">back to top</a>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>movies</title>
+    <style>
+        html {
+            font-size: 1rem;
+        }
+
+        h1 {
+
+            position: relative;
+            font-size: 36px;
+            font-weight: bold;
+
+        }
+
+        h1::before {
+            content: "Top 5 movies all time";
+            position: absolute;
+            top: 15px;
+            left: 10px;
+            color: rgb(255, 106, 80);
+            z-index: -1;
+        }
+
+        h2 {
+            -webkit-text-stroke: 1px red;
+        }
+
+        img {
+            width: 150px;
+            height: 200px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: red;
+        } /*par defaut les elements comme les images sont positionner display:inline, si tu veux les mettre lun a coté de l'autre tu dois mettre display:block*/
+    </style>
+</head>
+
+<body>
+    <h1>Top 5 movies all time</h1>
+    <img src="shawshank.webp" alt="shawshank" width="150px" height="200px"> <!--le alt cest obligé dis a qoi l'image sert--> 
+    <img src="thegodfather.jpg" alt="the godfather" width="150px" height="200px"> <!--c'est mieux decrire les tailles dans le html, quand ta connexion est lente et que la page se charge il sait directement combien de place laisser car le navigateur charge dabord le html-->
+    <ol>
+        <h2>
+            <li>Shawshank Redemption</li>
+        </h2>
+        <p>Over the course of several years, two convicts form a friendship, seeking consolation and, eventually,
+            redemption
+            through basic compassion.</p>
+        <br>
+        <a href="Shawshank.html">more info</a>
+        <h2>
+            <li>The Godfather</li>
+        </h2>
+        <p>Don Vito Corleone, head of a mafia family, decides to hand over his empire to his youngest son Michael.
+            However, his
+            decision unintentionally puts the lives of his loved ones in grave danger.
+        </p>
+        <h2>
+            <li>The dark Knight</li>
+        </h2>
+        <p>When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of
+            the
+            greatest psychological and physical tests of his ability to fight injustice.</p>
+        <h2>
+            <li>The Godfather: Part II</li>
+        </h2>
+        <p>The early life and career of Vito Corleone in 1920s New York City is portrayed, while his son, Michael,
+            expands and
+            tightens his grip on the family crime syndicate.
+        </p>
+        <h2>
+            <li>12 Angry men</li>
+        </h2>
+        <p>The jury in a New York City murder trial is frustrated by a single member whose skeptical caution forces them
+            to more
+            carefully consider the evidence before jumping to a hasty verdict.
+        </p>
+    </ol>
+    <hr>
+    Imdb
+</body>
+
+</html>
