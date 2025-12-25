@@ -1,0 +1,123 @@
+body {
+    background-color: darksalmon;
+    margin:0;
+    padding:0
+}
+
+table{
+  
+    border-collapse: collapse;     /* très important */
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 10px;
+    margin:10px
+    
+}
+
+th{
+   padding: 10px;
+text-align: center;
+color:lightgray;
+text-transform: uppercase;
+border-bottom: 2px dotted lightgray;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+tr {padding: 10px;}
+
+td {
+    padding: 10px;
+ text-align: center;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.product {
+    text-align: left;
+}
+
+.total{
+    text-align: right;
+    color:green;
+    border-top: 2px dotted lightgray;
+}
+
+.size{
+    color: lightgray;
+    display: inline;
+    margin-left: 5px;
+}
+
+form{
+    background-color: white;
+   margin: 10px;
+   padding: 20px;
+    width:250px;
+    text-align:center;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    display: block;
+  margin: 10px;
+    text-decoration: none;
+    color:black
+
+}
+
+a:hover {
+  color: blue;               
+  text-decoration: underline;  
+}
+
+
+input{
+    text-align: center;
+}
+
+input[type="submit"]{
+width: 100px;
+background-color: blue;
+color: white;
+border: none;
+border-radius: 5px;
+padding:5px
+}
+
+input[type="submit"]:hover{
+    background-color: white;
+color:blue;
+border: 1px solid blue;
+}
+
+input[type="button"]{
+width: 100px;
+background-color:white;
+color: blue;
+ border: 1px solid blue;
+padding:5px;
+border-radius:5px;
+}
+
+input[type="button"]:hover{
+    background-color: blue;
+    color: white;
+    border:none;
+}
+
+label{margin:10px;}
+
+label, input[type="text"], input[type="password"]{
+    display: block;
+ margin:0 auto;
+  width: 70%;        /* ou 150px, comme tu veux */
+    /* centre horizontalement dans le form */
+  
+   
+}
+
+p{margin: 10px auto;  }
+
+.rating{
+    display: flex;
+}

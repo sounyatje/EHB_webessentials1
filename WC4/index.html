@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <table>
+    
+        <tr>
+            <th>Product</th>
+            <th>QTY</th>
+            <th>Price</th>
+        </tr>
+
+        <tr>
+            <td class="product"><b>Drink </b>
+                <div class="size">(large)</div>
+            </td>
+            <td>1</td>
+            <td>2.90</td>
+        </tr>
+
+        <tr>
+            <td class="product"><b>Fries</b>
+                <div class="size">(small)</div>
+            </td>
+            <td>2</td>
+            <td>5.00</td>
+        </tr>
+
+        <tr>
+            <td class="product"><b>Burger</b>
+                <div class="size">(no pickle)</div>
+            </td>
+            <td>2</td>
+            <td>7.00</td>
+        </tr>
+
+        <tr class="total">
+            <td class="total" colspan="2">Total</td> <!-- prend la place de Product + QTY -->
+            <td class="total">14.60</td>
+        </tr>
+    </table>
+
+    <form action="" method="get">
+        <h1>login</h1>
+  <p>
+    <label>Username
+      <input type="text" name="username" size="15" maxlength="30">
+    </label>
+  </p>
+
+  <p>
+    <label>Password
+      <input type="password" name="password" size="15" maxlength="30">
+    </label>
+  </p>
+<input type="submit" value="Login">
+  <a href="">forgot password</a>
+  <a href="">register</a>
+<input type="button" value="Register now">
+
+  
+</form>
+
+<form action="" method="get">
+    <h1>add movie</h1>
+    <label for="title">movie title</label>
+    <label for="screenwriter">screenwriter</label>
+    <label for="release date"></label>
+    <label for="genre">genre</label>
+ 
+    <select name="genre">
+<option value="drama" selected>
+drama</option>
+<option value="horror">horror</option>
+<option value="fantasy">fantasy</option>
+<option value="comedy">comedy</option>
+</select>
+
+<label for="description">description</label>
+<textarea name="description" id="description">type the description</textarea>
+
+<label for="rating">rating</label>
+<div class="rating">
+<input id="rating" type="radio"
+name="rating" value="1">
+<label for="rating">1</label>
+
+<input id="rating" type="radio"
+name="rating" value="2">
+<label for="rating">2</label>
+
+<input id="rating" type="radio"
+name="rating" value="3">
+<label for="rating">3</label>
+
+<input id="rating" type="radio"
+name="rating" value="4">
+<label for="rating">4</label>
+
+<input id="rating" type="radio"
+name="rating" value="5">
+<label for="rating">5</label>
+</div>
+
+<button type="submit">save</button>
+
+</form>
+
+<iframe
+  width="600"
+  height="450"
+  src="https://www.youtube.com/embed/WQhQGWjreVg"
+  title="Tuto React débutant"
+  allowfullscreen>
+</iframe>
+
+<iframe
+  width="100%"
+  height="166"
+  scrolling="no"
+  frameborder="no"
+  allow="autoplay"
+  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/XXXXXXXX&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true">
+</iframe>
+
+
+
+</body>
+
+</html>
