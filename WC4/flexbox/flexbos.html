@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    div:nth-last-of-type(1){
+        background-color: red;
+    }
+     div:nth-last-of-type(2){
+        background-color: orange;
+    }
+     div:nth-last-of-type(3){
+        background-color: yellow;
+    }
+     div:nth-last-of-type(4){
+        background-color:greenyellow;
+    }
+     div:nth-last-of-type(5){
+        background-color:lightblue;
+    }
+     div:nth-last-of-type(6){
+        background-color:purple;
+    }
+
+    .flex-container{
+        margin: 40px auto;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2em;
+        border: 2px solid white;
+        background-color: lightgrey;
+        width: 800px;
+        display:flex;
+        /*flex-direction: column; */
+        /* justify-content:center;
+        align-items:center; */
+         flex-wrap: wrap; 
+        
+    }
+
+    .flex-container > div {
+        text-align: center;
+        flex: 0 1 50%;
+        /* flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto; */
+    }
+</style>
+<body>
+    <section class="flex-container">
+        <div>one</div>
+        <div>two</div>
+        <div>three</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </section>
+</body>
+</html>

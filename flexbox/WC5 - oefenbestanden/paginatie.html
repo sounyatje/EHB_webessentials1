@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paginatie</title>
+  <style>
+    ul {
+      display: flex;
+      list-style: none;
+      justify-content:center;
+    position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;   /* pour centrer sur toute la largeur */
+  margin: 0;
+  padding: 20px;
+   
+    }
+
+    li{
+       border: 1px solid lightgray;
+
+       padding: 10px;
+    }
+
+
+    a {
+      text-decoration: none;
+      color: black;
+  
+    
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+    }
+   
+    a:active {
+  background-color: gray;
+  color: white;
+  transform: scale(0.95);
+}
+li.active {
+  background-color:green;
+}
+
+li.active > a{
+  color: white;
+}
+
+   li:hover{
+    background-color: lightgray;
+ 
+   }
+    h1 {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Paginatie</h1>
+
+  <ul class="paginatie">
+    <li><a href="#">&laquo;</a></li>
+    <li class="active"><a href="#page1">1</a></li>
+    <li><a href="#page2">2</a></li>
+    <li><a href="#page3">3</a></li>
+    <li><a href="#page4">4</a></li>
+    <li><a href="#page5">5</a></li>
+    <li><a href="#page6">6</a></li>
+    <li><a href="#page5">7</a></li>
+    <li><a href="#page">&raquo;</a></li>
+  </ul>
+
+</body>
+
+</html>

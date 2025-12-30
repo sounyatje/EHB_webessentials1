@@ -1,0 +1,45 @@
+thead{
+    background-color: black;
+    color:white;
+   
+}
+
+table{
+    border:1px solid black;
+    border-collapse: collapse;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+
+th{
+    padding:10px;
+    margin:10px;
+    text-align:left;
+    width: 200px;
+}
+
+tr,td{
+    border:1px solid black;
+     padding:10px;
+    margin:10px;
+    text-align:left;
+    width: 200px;
+}
+
+tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+tr:nth-child(5) {
+  background-color:salmon;
+}
+
+th:nth-child(2){
+  border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+table caption{
+   caption-side: bottom;
+   text-align: right;
+}

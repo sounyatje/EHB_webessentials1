@@ -1,0 +1,25 @@
+.tooltip{
+    background-color: blue;
+    padding: 10px;
+    color: white;
+    border-radius:0px 20px 20px 20px;
+    width: 110px;
+  position: absolute;  
+    left:35px;
+    margin-top:5px;
+    display:none;
+}
+
+.tooltip-container{
+   display:inline-block;
+   position: relative
+}
+
+.tooltip-container > .tooltip:hover{
+    display: flex;
+}
+
+/* on survole le container, pas la tooltip */
+.tooltip-container:hover .tooltip {
+  display: block;
+}

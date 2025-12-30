@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  .gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* chaque carte = conteneur de position */
+.movie-card {
+  position: relative;
+  width: calc( 400px - ( 2 * 16px / 3 ));
+  flex: 1 1 calc(100% / 3); /* grow:1, shrink:1, basis ≈ 33.33% */
+}
+
+.movie-card a {
+  position: relative;
+  display: block;
+}
+
+.movie-card img:not(.star-icon) {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* overlay limité à la carte */
+.image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(255, 215, 0, 0.9),
+    rgba(255, 215, 0, 0)
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.movie-card a:hover .image-overlay {
+  opacity: 1;
+}
+
+
+
+/* étoile sur chaque carte */
+.star-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  z-index: 2;
+}
+
+   </style>
+</head>
+
+<body>
+<div class="gallery">
+  <div class="movie-card">
+    <a href="#">
+    <img src="../flexbox/WC5 - oefenbestanden/images/movie_4.jpg" alt="">
+    <div class="image-overlay"></div>
+    <img class="star-icon" src="../flexbox/WC5 - oefenbestanden/images/star-icon.svg" alt="">
+    </a>
+  </div>
+
+  <div class="movie-card">
+    <a href="#">
+    <img src="../flexbox/WC5 - oefenbestanden/images/movie_4.jpg" alt="">
+    <div class="image-overlay"></div>
+    <img class="star-icon" src="../flexbox/WC5 - oefenbestanden/images/star-icon.svg" alt="">
+    </a>
+  </div>
+
+    <div class="movie-card">
+      <a href="#">
+    <img src="../flexbox/WC5 - oefenbestanden/images/movie_4.jpg" alt="">
+    <div class="image-overlay"></div>
+    <img class="star-icon" src="../flexbox/WC5 - oefenbestanden/images/star-icon.svg" alt="">
+    </a>
+  </div>
+
+    <div class="movie-card">
+      <a href="#">
+    <img src="../flexbox/WC5 - oefenbestanden/images/movie_4.jpg" alt="">
+    <div class="image-overlay"></div>
+    <img class="star-icon" src="../flexbox/WC5 - oefenbestanden/images/star-icon.svg" alt="">
+    </a>
+  </div>
+
+    <div class="movie-card">
+      <a href="#">
+    <img src="../flexbox/WC5 - oefenbestanden/images/movie_4.jpg" alt="">
+    <div class="image-overlay"></div>
+    <img class="star-icon" src="../flexbox/WC5 - oefenbestanden/images/star-icon.svg" alt="">
+    </a>
+  </div>
+
+    <div class="movie-card">
+      <a href="#">
+    <img src="../flexbox/WC5 - oefenbestanden/images/movie_4.jpg" alt="">
+    <div class="image-overlay"></div>
+    <img class="star-icon" src="../flexbox/WC5 - oefenbestanden/images/star-icon.svg" alt="">
+    </a>
+  </div>
+
+   
+
+</div>
+
+
+</body>
+
+</html>

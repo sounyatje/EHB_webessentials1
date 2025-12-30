@@ -1,0 +1,25 @@
+td{text-align: center;}
+td:nth-child(2), td:nth-child(3){
+background-color: lightskyblue;
+}
+table{
+    border: 1px solid lightskyblue;
+    border-collapse: collapse;
+}
+
+tr, td, th{
+    border: 1px solid lightblue;
+width: 100px;
+padding: 10px;
+margin:10px;
+}
+
+td:nth-child(2), td:nth-child(3){
+    color: white;
+}
+
+table caption{
+    text-align: center;
+    color: lightskyblue;
+    caption-side: bottom;
+}

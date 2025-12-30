@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigatie flexbox</title>
+    <style>
+
+
+nav {
+  background-color: black;
+
+}
+
+/* liens */
+nav ul {
+display: flex;
+list-style: none;
+padding: 0;
+margin:0;
+}
+
+nav li{
+  text-decoration: none;
+  list-style: none;
+   border-left: 1px solid white
+}
+
+nav li:first-child{
+  margin-right: auto;
+}
+
+nav a{
+  display: block;
+  text-decoration: none;
+  text-decoration: none;
+  padding: 10px;
+  color:white;
+  display: block;
+  background: black;
+  text-transform: uppercase;
+border-right: 1px solid white;
+
+}
+
+/* état hover */
+nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+
+    </style>
+</head>
+<body>
+    <nav>
+      <ul>
+        <li><a href="">home</a></li>
+        <li><a href="">blog</a></li>
+        <li><a href="">learning</a></li>
+        <li><a href="">discuss</a></li>
+      </ul>
+        
+  
+    </nav>
+</body>
+</html>
