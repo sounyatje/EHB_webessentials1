@@ -43,3 +43,39 @@
 </div>
 </body>
 </html>
+
+<!-- 1. Question 15 – flex-basis
+Texte : “Wat is het effect van flex-basis op een flex‑item?”
+Bonne réponse : “Het stelt de initiële grootte van een flex‑item in.” (ça règle la taille de base de l’item).
+
+flex-basis = la taille de départ de l’item sur l’axe principal (largeur en row, hauteur en column).
+
+Ensuite, flex-grow peut l’agrandir et flex-shrink peut la réduire, mais la base vient de flex-basis.
+
+Donc ce n’est ni l’alignement, ni la direction, ni l’ordre, juste la taille de base.
+
+2. Question 19 – flex: 0 1 auto
+Code :
+
+css
+.container {
+  display: flex;
+}
+.item {
+  flex: 0 1 auto;
+}
+La propriété flex est un raccourci pour :
+
+css
+flex-grow: 0;
+flex-shrink: 1;
+flex-basis: auto;
+C’est la valeur par défaut d’un flex‑item.
+
+flex-grow: 0 → l’item ne grandit pas pour prendre l’espace libre.
+
+flex-shrink: 1 → l’item peut rétrécir si manque de place.
+​
+​
+
+flex-basis: auto → la taille de base vient du contenu ou de width/height.-->

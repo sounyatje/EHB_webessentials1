@@ -147,34 +147,78 @@ footer {
 @media (min-width: 1024px) {
 
   /* HEADER FIXE EN HAUT */
+  body{
+    margin:0;
+    padding:0;
+  }
   header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 10;
+    background: #000;          /* bande noire pleine largeur */
   }
-
 
   nav {
     max-width: 1200px;
-    margin: 0 auto;
+   
+    height: 60px;              /* hauteur de la barre */
+    padding: 0;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;   /* tout à gauche */
+    flex-direction: row;       /* logo + menu sur la même ligne */
+    align-items: center;       /* centré verticalement */
+    justify-content: flex-start;
   }
 
-  /* menu reste collé à droite du logo, mais le tout est côté gauche */
+    /* logo à gauche */
+  .logo img {
+    height: 60px;              /* ajuste si besoin */
+    width: auto;
+  }
+
+  /* menu à droite du logo mais tout reste côté gauche */
   nav ul {
-    margin-left: 2em;              /* petit espace entre logo et liens */
+    list-style: none;
+    display: flex;
+    margin: 0;
+    margin-left: 2em;          /* espace entre logo et liens */
+    padding: 0;
+  }
+
+  nav li {
+    margin: 0 1.5em 0 0;       /* espacement horizontal */
+  }
+
+  nav a {
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase; /* comme sur le visuel */
+    font-size: 0.9rem;
+  }
+
+  nav a.active {
+    color: #f0141e;            /* lien MOVIES en rouge */
+  }
+
+  #download {
+    color: #ffffff;            /* si tu veux tout blanc sauf MOVIES */
   }
 
   main {
-    max-width: 1200px;
+ 
     margin: 0 auto;
     padding: 6em 1em 2em;           /* sous la nav fixe */
   }
 
+.featured {
+    background-color: #f0141e;
+    width: auto;
+  }
+
+  .featured .movie-content {
+    background-color: transparent;
+  }
   /* FILMS 2–6 : 2 cartes sur la 1re ligne, 3 sur la 2e */
 
   .movies {
@@ -185,7 +229,7 @@ footer {
 
   .movies .movie-block {
     box-sizing: border-box;
-    padding: 0 0.5em 2em;
+
   }
 
   /* films 2 et 3 -> 2 colonnes (50%) */
