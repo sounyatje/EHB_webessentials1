@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+  .container {
+    display: flex;
+    align-items: flex-start; /* tous en haut */
+    border: 2px solid black;
+    height: 150px;
+  }
+
+  .item {
+    width: 60px;
+    margin: 5px;
+    background: lightgray;
+  }
+
+  .special {
+    align-self: flex-end; /* celui-ci descend en bas */
+    background: lightcoral;
+  } 
+  /*Pense à une rangée de cartes, et tu veux bouger seulement une carte plus haut, plus bas, au centre, etc.
+
+Ce que fait align-self
+align-self règle l’alignement d’un seul item sur l’axe croisé (perpendiculaire à la direction principale du flex).
+
+Il remplace la valeur globale align-items uniquement pour cet item.
+
+Donc la bonne phrase est :
+
+“Het stelt de uitlijning van een enkel item in langs de dwarsas.”
+Ça aligne un seul item le long de l’axe secondaire (vertical si flex-direction: row, horizontal si column).
+
+Les items 1 et 3 suivent align-items: flex-start → ils restent en haut.
+
+L’item 2 a align-self: flex-end → il “descend” en bas du conteneur, tout seul.
+*/
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="item">1</div>
+  <div class="item special">2</div>
+  <div class="item">3</div>
+</div>
+
+</body>
+</html>

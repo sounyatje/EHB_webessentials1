@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  .container {
+    display: flex;
+    width: 600px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+  }
+  .item {
+    padding: 10px;
+    border: 1px solid gray;
+  }
+
+  /* Tous grow = 1 (ratio 1:1:1) */
+  .same .item {
+    flex-grow: 1;
+  }
+
+  /* Ratios différents: 1, 2, 3 */
+  .diff .item:nth-child(1) { flex-grow: 1; }
+  .diff .item:nth-child(2) { flex-grow: 2; }
+  .diff .item:nth-child(3) { flex-grow: 3; }
+</style>
+</head>
+<body>
+    <h2>flex-grow: 1, 1, 1</h2>
+<div class="container same">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+</div>
+
+<h2>flex-grow: 1, 2, 3</h2>
+<div class="container diff">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+</div>
+</body>
+</html>

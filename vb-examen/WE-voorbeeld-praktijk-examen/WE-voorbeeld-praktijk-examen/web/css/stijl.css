@@ -1,0 +1,204 @@
+/* ===========================
+   BASIS
+   =========================== */
+
+/* TYPO / BODY */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  color: #000000;
+  background: #ffffff;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===========================
+   HEADER & NAVIGATIE (MOBILE)
+   =========================== */
+
+/* HEADER & NAV */
+
+header {
+  background: #000000;
+}
+
+/* nav en colonne pour pouvoir centrer logo puis menu */
+nav {
+  display: flex;
+  flex-direction: column;   /* logo au-dessus, menu en dessous */
+  align-items: center;      /* centrer horizontalement */
+  padding: 0.7em 1em 1em;
+}
+
+/* logo centré automatiquement grâce à align-items:center */
+.logo img {
+  height: 48px;             /* ajuste si besoin */
+}
+
+/* menu centré sous le logo */
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0.5em 0 0;        /* petit espace sous le logo */
+  padding: 0;
+}
+
+nav li {
+  margin: 0 1.2em;
+}
+
+nav a {
+  color: #aaaaaa;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+  color: #ffffff;
+}
+
+#download {
+  color: #f0141e;
+}
+
+/* ===========================
+   INHOUD: FILMS (MOBILE)
+   =========================== */
+
+main {
+  padding: 1em;
+}
+
+h1 {
+  text-align: center;
+  color: #f0141e;
+}
+
+/* elk blok = 1 kolom op mobile */
+.movie-block {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+  background: #ffffff;
+}
+
+/* bloc entier */
+.featured {
+  border: 10px solid #f0141e;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* contenu intérieur (texte) */
+.featured .movie-content {
+  background: #ffffff;
+  color: #000000;
+  padding: 1em 2em;
+}
+
+
+.featured img {
+  width: 100%;
+  display: block;
+}
+
+
+.movie-content {
+  padding: 1em 2em;
+}
+
+.movie-text {
+  margin: 1em 0;
+}
+
+.movie-readmore {
+  font-weight: bold;
+}
+
+/* container van films 2 t.e.m. 6 */
+.movies {
+  display: block;              /* mobile: alles onder elkaar */
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+
+footer {
+  background: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 2em 1em;
+}
+
+/* ##################################
+   Mediaquery voor schermen vanaf 1024 pixels
+   ################################## */
+
+@media (min-width: 1024px) {
+
+  /* HEADER FIXE EN HAUT */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+
+
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;   /* tout à gauche */
+  }
+
+  /* menu reste collé à droite du logo, mais le tout est côté gauche */
+  nav ul {
+    margin-left: 2em;              /* petit espace entre logo et liens */
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 6em 1em 2em;           /* sous la nav fixe */
+  }
+
+  /* FILMS 2–6 : 2 cartes sur la 1re ligne, 3 sur la 2e */
+
+  .movies {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
+  }
+
+  .movies .movie-block {
+    box-sizing: border-box;
+    padding: 0 0.5em 2em;
+  }
+
+  /* films 2 et 3 -> 2 colonnes (50%) */
+  .movies .movie-block:nth-child(1),
+  .movies .movie-block:nth-child(2) {
+    width: 50%;
+  }
+
+  /* films 4, 5, 6 -> 3 colonnes (33.33%) */
+  .movies .movie-block:nth-child(3),
+  .movies .movie-block:nth-child(4),
+  .movies .movie-block:nth-child(5) {
+    width: 33.3333%;
+  }
+}
+

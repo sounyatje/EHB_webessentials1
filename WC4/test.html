@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+  .container {
+    display: flex;
+    border: 2px solid black;
+  }
+  .container {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 200px; /* puis 400px puis 200px */
+}
+
+/*Pense à une rangée de boîtes dans un conteneur qui rétrécit.
+
+Ce que fait flex-wrap: nowrap
+flex-wrap: nowrap veut dire : les items doivent rester sur une seule ligne, ils n’ont pas le droit de passer à la ligne suivante.
+
+Quand le conteneur devient plus petit, les items vont donc se comprimer / rétrécir (grâce à flex-shrink) ou parfois déborder, mais ils ne “cassent” pas sur une nouvelle ligne.*/
+/*À 600px : 3 items de ±200px chacun sur 1 ligne.
+
+À 400px : ils se compressent (par ex. ~133px chacun) mais toujours sur la même ligne.
+
+À 200px : encore plus petits, éventuellement texte qui se casse, mais toujours une seule ligne.*/
+
+.item {
+  flex: 0 1 200px;
+}
+  .item {
+    border: 1px solid red;
+    padding: 10px;
+  }
+
+.item.one { order: 0; }
+.item.two { order: -1; }
+.item.three { order: 1; } /* plus petit que 0 */
+
+ 
+</style>
+
+</head>
+<body>
+
+<div class="container">
+  <div class="item one">1</div>
+  <div class="item two">2</div>
+  <div class="item three">3</div>
+</div>
+
+</body>
+</html>

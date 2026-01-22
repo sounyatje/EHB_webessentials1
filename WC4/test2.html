@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>flex-basis demo</title>
+  <style>
+    .container {
+      display: flex;
+      border: 2px solid black;
+      margin-bottom: 20px;
+      width: 600px;
+    }
+
+    .item {
+      border: 1px solid gray;
+      padding: 10px;
+    }
+
+    /* 1) flex-basis: auto = taille de base = contenu */
+    .auto .item {
+      flex-grow: 1;
+      flex-basis: auto;   /* taille de départ = largeur du contenu */
+    }
+
+    /* 2) flex-basis: 0 = on ignore la largeur naturelle */
+    .zero .item {
+      flex-grow:1;
+      flex-basis: 0;      /* taille de départ = 0, puis on répartit l’espace */
+    }
+
+    /*Avec flex-basis: auto (premier conteneur) : l’item avec plus de texte sera plus large, car sa taille de base suit son contenu.
+
+Avec flex-basis: 0 (deuxième conteneur) : les deux items prennent la même largeur, car on part de 0 et on répartit l’espace libre à parts égales grâce à flex-grow: 1.
+
+Tu peux jouer en changeant le texte ou en enlevant flex-grow: 1 pour voir encore mieux la différence.*/
+
+  </style>
+</head>
+<body>
+
+  <h2>flex-basis: auto</h2>
+  <div class="container auto">
+    <div class="item">Court</div>
+    <div class="item">Un texte beaucoup plus long que le premier</div>
+  </div>
+
+  <h2>flex-basis: 0</h2>
+  <div class="container zero">
+    <div class="item">Court</div>
+    <div class="item">Un texte beaucoup plus long que le premier</div>
+  </div>
+
+</body>
+</html>
